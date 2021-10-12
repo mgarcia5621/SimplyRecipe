@@ -3,28 +3,73 @@
 Navbar
 ========
 */
-body{
+body {
     font-family: 'Noto Sans', sans-serif;
 }
-.navbar{
+
+.navbar {
     display:flex;
     justify-content: center;
     align-items: center;
-    
-}
-.nav-center{
-    width: 90vw;
-    max-width: 1120px;
+    /* background-color: blue; */    
 }
 
-.nav-header{
+.nav-center {
+    width: 90vw;
+    max-width: 1120px;
+    /* background: red; */    
+}
+
+.nav-header {
     height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-header img{
+.nav-header img {
     width: 200px;
+}
 
+.nav-btn {
+    padding: 0.15rem 0.75rem;
+}
+
+.nav-btn i {
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    display: inline-flex;
+}
+
+.nav-link > a {
+    margin: 0 3rem;
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-link {
+        display: none;
+        margin: .5rem 0;
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .contact-link {
+        max-width: fit-content;
+        padding: .5rem;
+        background-color:blue;
+    }
+
+    .content-btn {
+        color: #fff;
+    }
+
+    .nav-btn {
+        display: inline-block;
+    }
 }
