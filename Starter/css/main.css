@@ -73,3 +73,14 @@ body {
         display: inline-block;
     }
 }
+
+.nav-link {
+    /* display: block; this is what the guy put! */
+    text-align: center;
+    text-transform: capitalize;
+    color: grey;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+    border-top: 1px solid; 
+    border-color: grey;
+}
