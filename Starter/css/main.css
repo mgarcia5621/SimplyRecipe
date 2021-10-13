@@ -5,6 +5,7 @@ Navbar
 */
 body {
     font-family: 'Noto Sans', sans-serif;
+    width: 100vw;
 }
 
 .navbar {
@@ -26,7 +27,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+.nav-logo {
+    
+}
 .nav-header img {
     width: 200px;
 }
@@ -41,10 +44,15 @@ body {
 
 .nav-link {
     display: inline-flex;
+
 }
 
 .nav-link > a {
     margin: 0 3rem;
+}
+
+.show-links {
+    height: 98px;
 }
 
 .nav-btn {
@@ -83,4 +91,16 @@ body {
     padding: 1rem 0;
     border-top: 1px solid; 
     border-color: grey;
+    transition: grey;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.contact-link a {
+    padding: 0.15rem 1rem;
+    text-decoration: none;
 }
