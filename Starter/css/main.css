@@ -3,22 +3,23 @@
 Navbar
 ========
 */
+
 body {
     font-family: 'Noto Sans', sans-serif;
     width: 100vw;
 }
 
 .navbar {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */    
+    /* background-color: blue; */
 }
 
 .nav-center {
     width: 90vw;
     max-width: 1120px;
-    /* background: red; */    
+    /* background: red; */
 }
 
 .nav-header {
@@ -27,9 +28,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.nav-logo {
-    
-}
+
+.nav-logo {}
+
 .nav-header img {
     width: 200px;
 }
@@ -44,10 +45,9 @@ body {
 
 .nav-link {
     display: inline-flex;
-
 }
 
-.nav-link > a {
+.nav-link>a {
     margin: 0 3rem;
 }
 
@@ -61,16 +61,42 @@ body {
 
 @media only screen and (max-width: 600px) {
     .nav-link {
-        display: none;
+        display: inline-flex;
         margin: .5rem 0;
         /* display: flex; */
         flex-direction: column;
+        /* display: block; this is what the guy put! */
+        text-align: center;
+        text-transform: capitalize;
+        color: grey;
+        letter-spacing: 2px;
+        padding: 1rem 0;
+        transition: grey;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        top: 125px;
+        left: -6.5rem;
+    }
+
+    .nav-link > a {
+        border-top: 1px solid;
+        border-color: grey;
+        width: 100%;
+    }
+
+    .nav-link a:first-child {
+        border-top: none;
     }
 
     .contact-link {
         max-width: fit-content;
         padding: .5rem;
-        background-color:blue;
+        background-color: blue;
+    }
+    
+    .contact-link {
+        display: flex;
     }
 
     .content-btn {
@@ -80,20 +106,6 @@ body {
     .nav-btn {
         display: inline-block;
     }
-}
-
-.nav-link {
-    /* display: block; this is what the guy put! */
-    text-align: center;
-    text-transform: capitalize;
-    color: grey;
-    letter-spacing: 2px;
-    padding: 1rem 0;
-    border-top: 1px solid; 
-    border-color: grey;
-    transition: grey;
-    text-decoration: none;
-    font-size: 20px;
 }
 
 .nav-link:hover {
