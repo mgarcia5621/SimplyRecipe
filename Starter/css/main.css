@@ -45,6 +45,7 @@ body {
 
 .nav-link {
     display: inline-flex;
+
 }
 
 .nav-link>a {
@@ -52,7 +53,11 @@ body {
 }
 
 .show-links {
-    height: 98px;
+    height: 351px;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3 ease-in-out all;
 }
 
 .nav-btn {
@@ -76,13 +81,14 @@ body {
         font-size: 20px;
         position: relative;
         top: 125px;
-        left: -6.5rem;
+        left: -7.8rem;
     }
 
     .nav-link > a {
         border-top: 1px solid;
         border-color: grey;
         width: 100%;
+        
     }
 
     .nav-link a:first-child {
@@ -91,12 +97,16 @@ body {
 
     .contact-link {
         max-width: fit-content;
-        padding: .5rem;
+        padding: 1rem;
         background-color: blue;
+        align-items: center;
+        left: -80px;
+        
     }
     
     .contact-link {
         display: flex;
+        
     }
 
     .content-btn {
