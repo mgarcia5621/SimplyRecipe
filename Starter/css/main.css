@@ -52,13 +52,6 @@ body {
     margin: 0 3rem;
 }
 
-.show-links {
-    height: 351px;
-    flex-direction: column;
-    height: 0;
-    overflow: hidden;
-    transition: 0.3 ease-in-out all;
-}
 
 .nav-btn {
     display: none;
@@ -66,7 +59,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .nav-link {
-        display: inline-flex;
+        display: none;
         margin: .5rem 0;
         /* display: flex; */
         flex-direction: column;
@@ -83,16 +76,24 @@ body {
         top: 125px;
         left: -7.8rem;
     }
-
+    
     .nav-link > a {
         border-top: 1px solid;
         border-color: grey;
         width: 100%;
         
     }
-
+    
     .nav-link a:first-child {
         border-top: none;
+    }
+    
+    .show-links {
+        /* height: 351px;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.3 ease-in-out all; */
+        display: inline-block;
     }
 
     .contact-link {
@@ -108,7 +109,7 @@ body {
         display: flex;
         
     }
-
+    
     .content-btn {
         color: #fff;
     }
