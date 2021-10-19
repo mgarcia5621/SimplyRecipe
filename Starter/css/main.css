@@ -57,24 +57,18 @@ body {
     display: none;
 }
 
+.nav-link:hover {
+    color: blue;
+}
+
+.contact-link a {
+    padding: 0.15rem 1rem;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
-    .nav-link {
-        display: none;
-        margin: .5rem 0;
-        /* display: flex; */
-        flex-direction: column;
-        /* display: block; this is what the guy put! */
-        text-align: center;
-        text-transform: capitalize;
-        color: grey;
-        letter-spacing: 2px;
-        padding: 1rem 0;
-        transition: grey;
-        text-decoration: none;
-        font-size: 20px;
-        position: relative;
-        top: 125px;
-        left: -7.8rem;
+    .nav-links .nav-link {
+       display: none;
     }
     
     .nav-link > a {
@@ -87,13 +81,30 @@ body {
     .nav-link a:first-child {
         border-top: none;
     }
-    
+/* 
     .show-links {
-        /* height: 351px;
-        flex-direction: column;
-        overflow: hidden;
-        transition: 0.3 ease-in-out all; */
         display: inline-block;
+        margin: 0 -1rem;
+    } */
+    
+    .show-links .nav-link {
+        /* height: 351px; */
+        overflow: hidden;
+        transition: 0.3 ease-in-out all;
+        margin: .5rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: capitalize;
+        color: grey;
+        letter-spacing: 2px;
+        padding: 1rem 0;
+        transition: grey;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        top: 15rem;
+        left: -70%;
     }
 
     .contact-link {
@@ -116,14 +127,8 @@ body {
 
     .nav-btn {
         display: inline-block;
+        position: absolute;
+        top: 5rem;
+        right: 3rem;
     }
-}
-
-.nav-link:hover {
-    color: blue;
-}
-
-.contact-link a {
-    padding: 0.15rem 1rem;
-    text-decoration: none;
 }
