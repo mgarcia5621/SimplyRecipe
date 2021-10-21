@@ -6,7 +6,7 @@ Navbar
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    width: 100vw;
+    margin: 2rem 0 0 0;
 }
 
 .navbar {

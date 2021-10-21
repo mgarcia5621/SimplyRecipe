@@ -1,4 +1,6 @@
 const toggleBtn = document.getElementById("toggle-btn");
+const date = document.getElementById('date');
+const currentYear = new Date().getFullYear();
 
 const getElement = (selector) => {
     const element = document.querySelector(selector)
@@ -16,7 +18,4 @@ function toggleShowLinks() {
 
 toggleBtn.addEventListener('click', toggleShowLinks);
 
-
-const date =getElement('#date');
-const currentYear = new Date() .getFullYear();
 date.textContent = currentYear
