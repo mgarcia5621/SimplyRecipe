@@ -170,6 +170,51 @@ body {
         }
         .contact-link {
             margin-left: auto;
-            right: 100px;
+            margin-right: 0;
+            background: #5C7AEA;
+            
+            
         }
     }
+
+
+/* 
+========
+Page
+========
+*/
+.page {
+    /* background:red; */
+    width: 90vw;
+    max-width: 992px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    min-height: calc(100vh - (6rem + 4rem));
+}
+/* 
+========
+footer
+========
+*/
+.page-footer {
+    height: 4rem;
+    /* text-align: center; */
+    background: black;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.page-footer p {
+    margin-bottom: 2;
+}
+
+.footer-logo , .page-footer a{
+   color: #645cff; 
+}
+/* 
+========
+
+========
+*/
