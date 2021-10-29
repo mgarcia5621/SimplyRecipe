@@ -282,6 +282,7 @@ Recipes
      display: grid;
      gap: 2rem 1rem;
      padding-bottom: 3rem;
+    border: 2px solid green;
 }
 
 .tag-container {
@@ -303,6 +304,58 @@ Recipes
 
 .tags-list a:hover {
     color: dimgray;
+}
+
+.recipe {
+    display: block;
+}
+
+.recipe-img {
+    height: 15rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.recipe h5 {
+    margin-bottom: 0;
+    line-height: 1;
+    color: grey;
+}
+
+.recipe p {
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 0.5rem;
+    color: grey;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 576px) {
+    .recipes-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .recipe-img {
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .recipes-container {
+        grid-template-columns: 600px 1fr
+    }
+    .recipe p {
+        font-size: 0.85rem;
+    }
+    .tags-container {
+        order: 0;
+    }
+    .tags-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
 
 
