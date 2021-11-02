@@ -27,7 +27,8 @@
           <a href="index.html"><img src="./Starter/Assets/simplyrecipes.png" alt="SimplyRecipe"/></a>
            <!-- Links -->
            <!-- <div class="show-links"> -->
-          <div class="nav-links">
+          <div id="sideNav" class="show-links nav-links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link">About</a>
             <a href="tags.html" class="nav-link">Tags</a>
@@ -37,7 +38,7 @@
             </div>
           </div>
           </div> 
-          <button type="button" id="toggle-btn" class="btn nav-btn"><i class="fas fa-align-justify"></i></button>
+          <button type="button" id="toggle-btn" class="btn nav-btn" onclick="openNav()"><i class="fas fa-align-justify"></i></button>
         </div>                
       </div>
     </nav>

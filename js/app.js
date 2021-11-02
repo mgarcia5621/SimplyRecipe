@@ -12,10 +12,20 @@ const getElement = (selector) => {
     
 const links = getElement('.nav-links');
 
-function toggleShowLinks() {
-    links.classList.toggle('show-links');
-}
+// function toggleShowLinks() {
+//     links.classList.toggle('show-links');
+// }
 
-toggleBtn.addEventListener('click', toggleShowLinks);
+// toggleBtn.addEventListener('click', toggleShowLinks);
 
 date.textContent = currentYear
+
+// Slider Menu
+
+function openNav() {
+    document.getElementById("sideNav").style.width = "250px";
+};
+
+function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
+}
