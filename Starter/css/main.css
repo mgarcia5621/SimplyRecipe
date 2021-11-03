@@ -426,6 +426,19 @@ Error
 }
 /* 
 ========
-
+About
 ========
 */
+
+.featured-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-page .btn {
+    text-decoration: none;
+    background: #645cff;
+    color: #fff;
+    font-size: 20px;
+    
+}
