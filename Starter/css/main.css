@@ -430,6 +430,34 @@ About
 ========
 */
 
+.about-page h2 {
+    text-transform: none;
+    font-weight: bold;
+}
+
+.about-page {
+    display: grid;
+    gap: 2rem 4rem;
+    padding-bottom: 3rem;
+}
+
+.about-img {
+    border-radius: 4px;
+    height: 300px;
+}
+
+@media screen and (min-width: 992px){
+    .about-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        align-items: center;
+    }
+    .about-img{
+        height: 100%;
+    }
+
+}
+
 .featured-title {
     text-align: center;
     font-size: 20px;
@@ -440,5 +468,7 @@ About
     background: #645cff;
     color: #fff;
     font-size: 20px;
-    
+    border-radius: 4px;
+    padding: 0.15rem 1rem;
+    text-decoration: none;
 }
