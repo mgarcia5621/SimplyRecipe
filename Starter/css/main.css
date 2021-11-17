@@ -548,3 +548,24 @@ Tags page
     }
 }
 
+
+
+/* 
+========
+Single recipe Page
+========
+*/
+
+.recipe-hero {
+    display: grid;
+    gap: 3rem;
+}
+
+.recipe-hero-img {
+    height: 300px;
+    border-radius: 4px;
+}
+
+.recipe-info p {
+    color: grey;
+}
