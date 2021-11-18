@@ -569,3 +569,65 @@ Single recipe Page
 .recipe-info p {
     color: grey;
 }
+
+.recipe-icons {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    gap: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.recipe-icons i{
+    font-size: 1.5rem;
+    color: #5C7AEA;
+}
+.recipe-icons h5,
+.recipe-icons p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+.recipe-hero p {
+    color: grey;
+    
+}
+
+.recipe-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.recipe-tags a {
+    background:#5C7AEA;
+    color: white;
+    padding: 0.05rem 0.5rem;
+    border-radius: 3px;
+    margin: 0 0.25;
+    text-transform: capitalize;
+}
+
+
+@media screen and (min-width: 992px) {
+    .recipe-hero {
+        grid-template-columns: repeat(4fr, 5fr);
+        align-items: center;
+    }
+}
+
+.recipe-content {
+    padding: 3rem 0;
+    display: grid;
+    gap: 2rem 5rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    .recipe-content {
+        grid-template-columns: repeat(2fr 1fr);
+    
+    }
+}
