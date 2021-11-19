@@ -491,8 +491,10 @@ Contact page
 }
 
 .form-row {
-    color: red;
+    color: white;
     padding: 0.5rem 0.5rem;
+    background: #5C7AEA;
+    font-weight: 600;
 }
 
 
