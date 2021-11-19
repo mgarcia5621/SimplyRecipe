@@ -486,7 +486,15 @@ Contact page
 .contact-form {
     width: 100%;
     margin: 0;
+    display: flex;
+        
 }
+
+.form-row {
+    color: red;
+    padding: 0.5rem 0.5rem;
+}
+
 
 .contact-container {
     display: grid;
