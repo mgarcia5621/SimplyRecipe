@@ -460,6 +460,11 @@ About
     }
 
 }
+@media screen and (min-width:375px){
+    .about-img {
+        align-items: center;
+        border-radius: 50px;
+    }
 
 .featured-title {
     text-align: center;
