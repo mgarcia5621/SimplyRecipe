@@ -3,13 +3,11 @@
 Navbar
 ========
 */
-@media screen and (min-width: 768px){
-    .nav-link
-}
 
+*, 
 body {
     font-family: 'Noto Sans', sans-serif;
-    margin: 2rem 0 0 0;
+    margin: 0;
 }
 
 .navbar {
@@ -17,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     /* background-color: blue; */
+    padding-top: 1.5rem;
 }
 
 .nav-center {
@@ -31,8 +30,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-.nav-logo {}
 
 .nav-header img {
     width: 200px;
@@ -466,19 +463,20 @@ About
         border-radius: 50px;
     }
 
-.featured-title {
-    text-align: center;
-    font-size: 20px;
-}
+    .featured-title {
+        text-align: center;
+        font-size: 20px;
+    }
 
-.about-page .btn {
-    text-decoration: none;
-    background: #645cff;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 4px;
-    padding: 0.15rem 1rem;
-    text-decoration: none;
+    .about-page .btn {
+        text-decoration: none;
+        background: #645cff;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 4px;
+        padding: 0.15rem 1rem;
+        text-decoration: none;
+    }
 }
 
 
@@ -491,8 +489,12 @@ Contact page
 .contact-form {
     width: 100%;
     margin: 0;
-    display: flex;
-        
+    display: inline-block;        
+}
+
+.form-input,
+.form-textarea {
+    width: 98%;
 }
 
 .form-row {
